@@ -91,7 +91,7 @@ if has("gui_running")
     hi Directory      gui=NONE   guifg=#00ff8b   guibg=NONE
     hi LineNr         gui=NONE   guifg=#8b8bcd   guibg=#2e2e2e
     hi NonText        gui=BOLD   guifg=#8b8bcd   guibg=NONE
-    hi SpecialKey     gui=BOLD   guifg=#3b205d   guibg=NONE
+    hi SpecialKey     gui=BOLD   guifg=#ab60ed   guibg=NONE
     hi Title          gui=BOLD   guifg=#af4f4b   guibg=NONE
     hi Visual         gui=NONE   guifg=#eeeeee   guibg=#4e4e8f
 
@@ -110,6 +110,9 @@ if has("gui_running")
     hi Type           gui=NONE   guifg=#ff8bff   guibg=NONE
     hi Underlined     gui=BOLD   guifg=#df9f2d   guibg=NONE
     hi TaglistTagName gui=BOLD   guifg=#808bed   guibg=NONE
+
+    hi TabLine                                   guibg=#000000
+    hi TabLineFill                               guifg=#000000
 
     hi perlSpecialMatch   gui=NONE guifg=#c080d0   guibg=#404040
     hi perlSpecialString  gui=NONE guifg=#c080d0   guibg=#404040
@@ -130,7 +133,6 @@ if has("gui_running")
     if v:version >= 700
         hi Pmenu          gui=NONE   guifg=#eeeeee   guibg=#4e4e8f
         hi PmenuSel       gui=BOLD   guifg=#eeeeee   guibg=#2e2e3f
-        hi PmenuSbar      gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
         hi PmenuThumb     gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
 
         hi SpellBad     gui=undercurl guisp=#cc6666
@@ -142,7 +144,7 @@ if has("gui_running")
     endif
     if v:version >= 703
         hi Conceal      gui=NONE      guifg=#c080d0   guibg=NONE
-        hi ColorColumn  gui=NONE                      guibg=#2e2e2e
+        hi ColorColumn  gui=NONE      guifg=NONE      guibg=#171720
     endif
 else
     if ! g:inkpot_black_background
